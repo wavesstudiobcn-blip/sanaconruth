@@ -220,6 +220,7 @@ footer{background:var(--cream-dark);border-top:1px solid var(--gold-light);color
 
   /* FOOTER MOBILE */
   .footer-inner{flex-direction:column;align-items:flex-start}
+  section[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr}
 }
 
 .btn-mini-wa{display:inline-block;border:1px solid #25D366;color:#25D366;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.3rem 0.9rem;border-radius:2px;text-decoration:none;transition:all 0.2s;margin-top:0.3rem;font-weight:500}
@@ -342,10 +343,9 @@ footer{background:var(--cream-dark);border-top:1px solid var(--gold-light);color
         </div>
       </li>
     </ul>
-    <div style="display:flex;align-items:center;gap:1.5rem;padding:1.5rem 0;margin:0.5rem 0;border-top:1px solid rgba(0,0,0,0.08);border-bottom:1px solid rgba(0,0,0,0.08);">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--mid);text-decoration:line-through;opacity:0.45;">140€</div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:var(--gold);line-height:1;">79,99€</div>
-      <div style="background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--gold);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:2px;align-self:flex-start;margin-top:0.8rem;">Oferta limitada</div>
+    <div style="padding:1.5rem 0;margin:0.5rem 0;border-top:1px solid rgba(201,168,76,0.2);border-bottom:1px solid rgba(201,168,76,0.2);">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:var(--gold);line-height:1;">140€</div>
+      <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.5rem;letter-spacing:0.08em;text-transform:uppercase;">Acompañamiento completo · 21 días</div>
     </div>
     <a href="https://wa.me/34665962285?text=Hola%20Ruth%20%F0%9F%8C%BF%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20programa%20%22Descubriendo%20la%20DIOSA%20en%20m%C3%AD%22%20y%20c%C3%B3mo%20puedo%20reservar%20mi%20lugar" target="_blank" class="btn-gold">Quiero este programa</a>
   </div>
@@ -360,6 +360,15 @@ footer{background:var(--cream-dark);border-top:1px solid var(--gold-light);color
       <p style="color:var(--mid);font-weight:300;font-size:0.95rem;margin-top:1rem;">Sin compromiso. Solo la sesión que necesitas ahora mismo.</p>
     </div>
     <div class="servicios-grid">
+      <div class="s-card">
+        <div style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.3rem;">Empieza aquí</div>
+        <div class="s-name">Sesión Punto de Partida</div>
+        <div class="s-desc" style="font-size:0.88rem;line-height:1.7;">Nos conocemos, te escucho y vemos juntas qué necesitas y cómo puedo acompañarte. Sin compromisos, sin expectativas — desde un lugar de mucha calma y confianza.<br><br><em style="color:var(--gold);font-size:0.82rem;">1 hora · El mejor primer paso antes de cualquier programa.</em></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
+          <div class="s-price">30€</div>
+          <a href="https://wa.me/34665962285?text=Hola%20Ruth%2C%20mi%20nombre%20es%20...%20y%20me%20gustar%C3%ADa%20reservar%20una%20Sesi%C3%B3n%20Punto%20de%20Partida%20%F0%9F%8C%BF" target="_blank" class="btn-mini-wa">Reservar</a>
+        </div>
+      </div>
       <div class="s-card">
         <div class="s-name">Masaje de Relajación</div>
 
@@ -401,18 +410,33 @@ footer{background:var(--cream-dark);border-top:1px solid var(--gold-light);color
         <div class="s-name">Mapa de los Sueños</div>
         <div class="s-desc">Diseña en papel lo que quieres para tu vida. Disponible presencial y online.</div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
-          <div class="s-price">35€</div>
-          <a href="https://wa.me/34665962285?text=Hola%20Ruth%20%F0%9F%8C%BF%20Me%20gustar%C3%ADa%20apuntarme%20al%20Taller%20Mapa%20de%20los%20Sue%C3%B1os" target="_blank" class="btn-mini-wa">Reservar</a>
+          <div class="s-price">50€</div>
+          <a href="https://wa.me/34665962285?text=Hola%20Ruth%2C%20mi%20nombre%20es%20...%20y%20me%20gustar%C3%ADa%20apuntarme%20al%20Taller%20Mapa%20de%20los%20Sue%C3%B1os%20%F0%9F%8C%BF" target="_blank" class="btn-mini-wa">Reservar</a>
         </div>
       </div>
-      <div class="s-card" style="border-bottom:2px solid var(--sage);background:var(--cream-dark);">
-        <div class="s-name" style="color:var(--sage);">Programa completo 21 días</div>
-        <div class="s-divider" style="background:var(--sage)"></div>
-        <div class="s-desc">Las tres sesiones. El proceso completo. La transformación de verdad.</div>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;"><div class="s-price sage-c">79,99€</div><a href="https://wa.me/34665962285?text=Hola%20Ruth%20%F0%9F%8C%BF%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20programa%20%22Descubriendo%20la%20DIOSA%20en%20m%C3%AD%22%20y%20c%C3%B3mo%20puedo%20reservar%20mi%20lugar" target="_blank" class="btn-mini-wa" style="border-color:var(--sage);color:var(--sage);">Reservar</a></div>
-      </div>
     </div>
+</section>
 
+<!-- BANNER PROGRAMA 21 -->
+<div style="background:var(--dark);padding:2.5rem 2rem;text-align:center;">
+  <div style="max-width:700px;margin:0 auto;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:2rem;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:white;font-style:italic;">¿Lista para descubrir la DIOSA en ti?</span>
+    <a href="https://wa.me/34665962285?text=Hola%20Ruth%2C%20mi%20nombre%20es%20...%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20programa%20%22Descubriendo%20la%20DIOSA%20en%20m%C3%AD%22%20y%20c%C3%B3mo%20puedo%20reservar%20mi%20lugar" target="_blank" class="btn-gold">Quiero este programa</a>
+  </div>
+</div>
+
+<!-- ALQUIMIA FEMENINA -->
+<section style="background:var(--gold-pale);padding:4rem 0;border-top:1px solid var(--gold-light);border-bottom:1px solid var(--gold-light);">
+  <div style="max-width:1080px;margin:0 auto;padding:0 2rem;">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:3rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <span style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);font-weight:500;display:block;margin-bottom:0.8rem;">Experiencia única</span>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:0.8rem;">Alquimia Femenina</h3>
+        <p style="color:var(--mid);font-weight:300;font-size:0.9rem;line-height:1.75;max-width:420px;">Un viaje íntimo hacia tu sensibilidad, tu fuerza y tu belleza — hacia esa Diosa interna que quizás estaba esperando que volvieras a mirarla. No vienes solo a crear un jabón, vienes a crear un momento único de transformación para ti.</p>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--gold);">60€</div>
+      <a href="https://wa.me/34665962285?text=Hola%20Ruth%2C%20mi%20nombre%20es%20...%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20la%20Alquimia%20Femenina%20%F0%9F%8C%BF" target="_blank" class="btn-outline-white" style="border-color:var(--gold);color:var(--gold);">Quiero saber más</a>
+    </div>
   </div>
 </section>
 
